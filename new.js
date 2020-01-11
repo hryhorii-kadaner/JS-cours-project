@@ -1,39 +1,23 @@
-'use strict';
+var money, time;
 
-console.log(4/0);
-console.log('string'*9);
+money = prompt("Ваш бюджет на месяц?", "");
+time = prompt("Введите дату в формате YYYY-MM-DD", "");
 
-let something;
-console.log(something);
-
-let person = {
-    name: 'Jhon',
-    age: 25,
-    isMarried: false
+appData = {
+    budget: money,
+    timeData: time,
+    expenses : {},
+    optionalExpenses: {},
+    income: [],
+    savings: false
 };
 
-console.log(person["name"]);
+let firstAnswer = prompt("Введите обязательную статью расходов в этом месяце", ""),
+    secondAnswer = prompt("Во сколько обойдется?", ""),
+    thirdAnswer = prompt("Введите обязательную статью расходов в этом месяце", ""),
+    fourthAnswer = prompt("Во сколько обойдется?", "");
 
-let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
-console.log(arr[0]);
+appData.expenses.firstAnswer = secondAnswer;
+appData.expenses.thirdAnswer = fourthAnswer;
 
-// let answer = confirm("Are you here?");
-
-// let answer = +prompt("Are you 18 y.o.?", "Yes");
-
-// console.log(typeof(answer));
-
-// console.log(4 + +" - object");
-
-let incr = 10,
-    decr = 10;
-
-console.log(incr++);
-console.log(decr--);
-
-console.log(5%2);
-console.log("2" === 2);
-
-let isChecked = false,
-    isClose = false;
-console.log(isChecked || !isClose);
+alert(appData.budget / 30);
