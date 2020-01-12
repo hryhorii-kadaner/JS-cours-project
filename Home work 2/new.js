@@ -32,7 +32,8 @@ for (let i = 0; i < 2; i++) {
 //         console.log("Done");
 //         appData.expenses[a] = b;
 //     } else {
-//         console.log("Что-то пошло не так");
+//         console.log ("Что-то не так");
+//         i--;
 //     }
 //     i++;
 // } while (i < 2);
@@ -47,7 +48,8 @@ for (let i = 0; i < 2; i++) {
 //         console.log("Done");
 //         appData.expenses[a] = b;
 //     } else {
-//         console.log("Что-то пошло не так");
+//         console.log ("Что-то не так");
+//         i--;
 //     }
 //     i++;
 // };
@@ -62,7 +64,8 @@ for (let i = 0; i < 2; i++) {
 //         console.log("Done");
 //         appData.expenses[a] = b;
 //     } else {
-//         console.log("Что-то пошло не так");
+//         console.log ("Что-то не так");
+//         i--;
 //     }
 //     i++;
 // } else {
