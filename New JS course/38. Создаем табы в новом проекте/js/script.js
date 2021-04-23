@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', function () {
             content.classList.add('hide');
             content.classList.remove('show', 'fade');
         });
-        tabs.forEach(item => {
-            item.classList.remove('tabheader__item_active');
+        tabs.forEach(tab => {
+            tab.classList.remove('tabheader__item_active');
         });
     }
 
@@ -25,8 +25,8 @@ window.addEventListener('DOMContentLoaded', function () {
         const target = e.target;
 
         if (target && target.classList.contains('tabheader__item')) {
-            tabs.forEach((item, i) => {
-                if (target == item) {
+            tabs.forEach((tab, i) => {
+                if (target == tab) {
                     hideTabContent();
                     showTabContent(i);
                 }
